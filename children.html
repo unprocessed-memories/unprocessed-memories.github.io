@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The laughs, chaos, curiosity and quiet moments that disappear too quickly.">
+  <title>Children Photography — Rakesh Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Rakesh<span>.</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="inner-page category-page">
+    <a class="back-link" href="index.html">← Back to selected work</a>
+
+    <section class="page-intro page-intro--category">
+      <p class="eyebrow">03 · CHILDREN</p>
+      <h1>Childhood,<br><em>as it happens.</em></h1>
+      <p class="page-description">The laughs, chaos, curiosity and quiet moments that disappear too quickly.</p>
+    </section>
+
+    <section class="gallery">
+        <figure class="gallery-item">
+          <button class="photo-button" data-full="images/children/children-01.svg" data-caption="Children photography">
+            <img src="images/children/children-01.svg" alt="Children photography" loading="lazy">
+          </button>
+          <figcaption>01</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <button class="photo-button" data-full="images/children/children-02.svg" data-caption="Child portrait">
+            <img src="images/children/children-02.svg" alt="Child portrait" loading="lazy">
+          </button>
+          <figcaption>02</figcaption>
+        </figure>
+    </section>
+
+    <section class="next-category">
+      <p class="eyebrow">KEEP EXPLORING</p>
+      <a href="about.html">About the photographer <span>↗</span></a>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <img id="lightboxImage" src="" alt="">
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <footer>
+    <span>© <span class="year"></span> Rakesh Photography</span>
+    <a href="about.html">About</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

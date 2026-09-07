@@ -1,46 +1,37 @@
-// Mobile nav toggle
-const navToggle = document.getElementById('navToggle');
-const sidebar = document.getElementById('sidebar');
-
-navToggle.addEventListener('click', () => {
-  const isOpen = sidebar.classList.toggle('is-open');
-  navToggle.setAttribute('aria-expanded', String(isOpen));
+document.querySelectorAll(".year").forEach(el => {
+  el.textContent = new Date().getFullYear();
 });
 
-sidebar.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    sidebar.classList.remove('is-open');
-    navToggle.setAttribute('aria-expanded', 'false');
-  });
-});
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxCaption = document.getElementById("lightboxCaption");
+const lightboxClose = document.getElementById("lightboxClose");
 
-// Lightbox
-const lightbox = document.getElementById('lightbox');
-const lightboxFrame = document.getElementById('lightboxFrame');
-const lightboxCaption = document.getElementById('lightboxCaption');
-const lightboxClose = document.getElementById('lightboxClose');
+document.querySelectorAll(".photo-button").forEach(button => {
+  button.addEventListener("click", () => {
+    if (!lightbox) return;
 
-document.querySelectorAll('.frame-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const img = btn.querySelector('.frame-img');
-    lightboxFrame.style.background = getComputedStyle(img).backgroundImage;
-    lightboxCaption.textContent = btn.dataset.caption || '';
+    lightboxImage.src = button.dataset.full;
+    lightboxImage.alt = button.querySelector("img")?.alt || "";
+    lightboxCaption.textContent = button.dataset.caption || "";
     lightbox.hidden = false;
-    lightboxClose.focus();
+    document.body.style.overflow = "hidden";
   });
 });
 
 function closeLightbox() {
+  if (!lightbox) return;
   lightbox.hidden = true;
+  lightboxImage.src = "";
+  document.body.style.overflow = "";
 }
 
-lightboxClose.addEventListener('click', closeLightbox);
-lightbox.addEventListener('click', (e) => {
-  if (e.target === lightbox) closeLightbox();
-});
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeLightbox();
+lightboxClose?.addEventListener("click", closeLightbox);
+
+lightbox?.addEventListener("click", event => {
+  if (event.target === lightbox) closeLightbox();
 });
 
-// Footer year
-document.getElementById('year').textContent = new Date().getFullYear();
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") closeLightbox();
+});

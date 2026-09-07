@@ -1,141 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Unprocessed Memories — Photography</title>
-<meta name="description" content="A photography journal by Rakesh. Frames from the road, the city, and everywhere in between.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rakesh — photography portfolio covering models, pre-weddings and children.">
+  <title>Rakesh — Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-    <span></span><span></span>
-  </button>
-
-  <header class="sidebar" id="sidebar">
-    <div class="sidebar-top">
-      <a href="#top" class="wordmark">Unprocessed<br>Memories</a>
-      <p class="tagline">Frames kept as they were shot.</p>
-    </div>
-
-    <nav class="sidebar-nav">
-      <a href="#ladakh">Ladakh, June</a>
-      <a href="#bangalore">Bangalore, home</a>
-      <a href="#coast">Gokarna coast</a>
-      <a href="#about">About</a>
+  <header class="site-header">
+    <a class="logo" href="index.html">Rakesh<span>.</span></a>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
     </nav>
-
-    <div class="sidebar-bottom">
-      <p>Based in Bangalore, India</p>
-      <a href="mailto:you@example.com">you@example.com</a>
-      <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">Instagram</a>
-    </div>
   </header>
 
-  <main id="top">
-
-    <section class="intro">
-      <h1>A record of light,<br>not a portfolio of proof.</h1>
-      <p>Every frame here is straight from the camera — no crop, no clean-up, no second-guessing what the moment looked like.</p>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">PHOTOGRAPHY · BENGALURU</p>
+      <h1>Stories, <em>honestly</em><br>framed.</h1>
+      <p class="hero-copy">
+        I photograph people, connections and the little moments that deserve
+        to be remembered — from portraits and fashion to pre-weddings and childhood.
+      </p>
+      <a class="text-link" href="#work">Explore my work <span>↓</span></a>
     </section>
 
-    <section class="roll" id="ladakh">
-      <div class="roll-heading">
-        <h2>Ladakh, June</h2>
-        <span class="roll-meta">Fujifilm X-T30 · 18 frames</span>
+    <section class="work" id="work">
+      <div class="section-heading">
+        <p class="eyebrow">SELECTED WORK</p>
+        <p class="section-note">Choose a story to explore</p>
       </div>
-      <div class="grid grid--tall">
-        <figure class="frame frame--a" style="--ph1:#7c8a93; --ph2:#3c4650;">
-          <button class="frame-btn" data-caption="Pangong Lake, first light — the water hadn't caught the wind yet.">
-            <span class="frame-img"></span>
-          </button>
-          <figcaption>Pangong Lake, first light</figcaption>
-        </figure>
-        <figure class="frame frame--b" style="--ph1:#9c8f7c; --ph2:#4a4133;">
-          <button class="frame-btn" data-caption="A prayer flag line above Diskit — wind was the only thing moving.">
-            <span class="frame-img"></span>
-          </button>
-          <figcaption>Diskit monastery</figcaption>
-        </figure>
-        <figure class="frame frame--c" style="--ph1:#6b7d76; --ph2:#2e3833;">
-          <button class="frame-btn" data-caption="Nubra valley road, taken from the passenger seat at 40 kmph.">
-            <span class="frame-img"></span>
-          </button>
-          <figcaption>Nubra valley, from the road</figcaption>
-        </figure>
-      </div>
-    </section>
 
-    <section class="roll" id="bangalore">
-      <div class="roll-heading">
-        <h2>Bangalore, home</h2>
-        <span class="roll-meta">Mixed rolls · 12 frames</span>
-      </div>
-      <div class="grid grid--wide">
-        <figure class="frame frame--d" style="--ph1:#8a7a6b; --ph2:#3f342b;">
-          <button class="frame-btn" data-caption="Russell Market, 7am — before the crowd, when the light is still soft.">
-            <span class="frame-img"></span>
-          </button>
-          <figcaption>Russell Market, early</figcaption>
-        </figure>
-        <figure class="frame frame--e" style="--ph1:#7a8570; --ph2:#333a2c;">
-          <button class="frame-btn" data-caption="Cubbon Park after rain, the light coming through wet leaves.">
-            <span class="frame-img"></span>
-          </button>
-          <figcaption>Cubbon Park, after rain</figcaption>
-        </figure>
-      </div>
-    </section>
+      <div class="category-grid">
+        <a class="category-card category-card--large" href="model.html">
+          <div class="card-image">
+            <img src="images/model/model-01.svg" alt="Model photography">
+          </div>
+          <div class="card-info">
+            <div><span class="number">01</span><h2>Model</h2></div>
+            <span class="arrow">↗</span>
+          </div>
+          <p>Portraits, fashion &amp; individual expression.</p>
+        </a>
 
-    <section class="roll" id="coast">
-      <div class="roll-heading">
-        <h2>Gokarna coast</h2>
-        <span class="roll-meta">Kodak Gold 200 · 24 frames</span>
-      </div>
-      <div class="grid grid--tall">
-        <figure class="frame frame--a" style="--ph1:#7d94a3; --ph2:#2f4351;">
-          <button class="frame-btn" data-caption="Om Beach, low tide — the only frame from the whole roll that came out sharp.">
-            <span class="frame-img"></span>
-          </button>
-          <figcaption>Om Beach, low tide</figcaption>
-        </figure>
-        <figure class="frame frame--b" style="--ph1:#9a8a76; --ph2:#463a2b;">
-          <button class="frame-btn" data-caption="Fishing boats waiting out the afternoon heat.">
-            <span class="frame-img"></span>
-          </button>
-          <figcaption>Boats, afternoon heat</figcaption>
-        </figure>
-        <figure class="frame frame--c" style="--ph1:#83786d; --ph2:#39322b;">
-          <button class="frame-btn" data-caption="The walk back, dusk, no one else on the path.">
-            <span class="frame-img"></span>
-          </button>
-          <figcaption>The walk back</figcaption>
-        </figure>
+        <a class="category-card" href="pre-wedding.html">
+          <div class="card-image">
+            <img src="images/pre-wedding/pre-wedding-01.svg" alt="Pre-wedding photography">
+          </div>
+          <div class="card-info">
+            <div><span class="number">02</span><h2>Pre-Wedding</h2></div>
+            <span class="arrow">↗</span>
+          </div>
+          <p>Two people, one story, captured naturally.</p>
+        </a>
+
+        <a class="category-card" href="children.html">
+          <div class="card-image">
+            <img src="images/children/children-01.svg" alt="Children photography">
+          </div>
+          <div class="card-info">
+            <div><span class="number">03</span><h2>Children</h2></div>
+            <span class="arrow">↗</span>
+          </div>
+          <p>Unscripted smiles, curiosity and growing up.</p>
+        </a>
       </div>
     </section>
 
-    <section class="about" id="about">
-      <h2>About</h2>
-      <p>I shoot mostly on weekends and whatever the trip allows — sometimes digital, sometimes a roll of film I forget about for months. This site is where the frames end up once they're back from the lab, unedited and in the order I took them.</p>
-      <p>If you want prints, or just want to talk about a place I've shot, <a href="mailto:you@example.com">write to me</a>.</p>
+    <section class="statement">
+      <p class="eyebrow">THE APPROACH</p>
+      <blockquote>“The best photographs don't feel posed. They feel like you.”</blockquote>
     </section>
 
-    <footer class="site-footer">
-      <p>&copy; <span id="year"></span> Unprocessed Memories. All frames shot and kept by me.</p>
-    </footer>
-
+    <section class="contact-strip">
+      <div>
+        <p class="eyebrow">HAVE A STORY IN MIND?</p>
+        <h2>Let's make something<br><em>worth keeping.</em></h2>
+      </div>
+      <a class="button" href="mailto:you@example.com">Get in touch →</a>
+    </section>
   </main>
 
-  <div class="lightbox" id="lightbox" hidden>
-    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
-    <div class="lightbox-frame" id="lightboxFrame"></div>
-    <p class="lightbox-caption" id="lightboxCaption"></p>
-  </div>
-
+  <footer>
+    <span>© <span class="year"></span> Rakesh Photography</span>
+    <a href="about.html">About</a>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
